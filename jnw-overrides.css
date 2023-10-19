@@ -122,6 +122,16 @@ bbb {
 	background-color: rgba(150, 150, 150, 0.2) ; /* #555 ; */
 	text-shadow: 5px 5px 10px black;
 	color: lightgreen;
+	font-size: 110%;
+}
+
+.highlight-box .bottomline {
+	border-bottom: 2px solid white;
+	padding-bottom: 0.5em;
+}
+
+.highlight-box hr {
+	border-bottom: 2px solid white;
 }
 
 .box h4 {

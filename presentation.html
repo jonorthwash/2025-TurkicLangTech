@@ -32,7 +32,6 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
-		<link rel="stylesheet" href="lib/style-vis.css">
 		<link rel="stylesheet" href="jnw-overrides.css">
 	</head>
 
@@ -70,15 +69,381 @@
 					</div>
 					<div class="float-right">
 						<div class="box">
-							<p class="bbb">The next ~13 minutes:</p>
+							<p class="bbb">The next ~18 minutes:</p>
 							<ul>
+								<li>Language vitality</li>
+								<ul class="shrink">
+									<li>Turkic languages</li>
+								</ul>
 								<li>Language technology (LT)</li>
-								<li>Why LT is important</li>
-								<li>Existing Turkic LT</li>
-								<li>Challenges</li>
+								<ul class="shrink">
+									<li>What is LT?</li>
+									<li>Why LT is important?</li>
+								</ul>
+								<li>The relationship between LT and vitality</li>
+								<ul class="shrink">
+									<li>Existing Turkic LT</li>
+									<li>What's missing?</li>
+									<li>The actual challenges</li>
+								</ul>
+								<li>Why bother?</li>
 							</ul>
 						</div>
 					</div>
+				</section>
+
+				<section>
+					<h2>Language vitality</h2>
+					<div class="highlight-box">
+						<h4>The language vitality crisis</h4>
+						<p>Languages everywhere are losing vitality</p>
+					</div>
+					<div class="highlight-box">
+						<h4>Linguistic loss of vitality</h4>
+						<p class="bottomline">The "breakdown" of intergenerational transmission</p>
+						<ul>
+							<li>Sometimes due to:</li>
+							<ul>
+								<li>population displacement, genocide, etc.</li>
+								<li>oppressive policies (e.g., educational)</li>
+							</ul>
+							<li>Happens even without explicity oppressive actions or policies</li>
+							<ul>
+								<li>But is <span class="highlight">always</span> due to <span class="highlight">oppression</span> and <span class="highlight">marginalisation</span></li>
+							</ul>
+						</ul>
+					</div>
+					<div class="highlight-box">
+						<h4>At the core</h4>
+						<p>If there are disincentives to using a language, people will stop using it</p>
+					</div>
+				</section>
+<!--
+unused
+{
+  "options": {"plugins":{
+	"legend": {"position": "right",
+		"labels": {"font": {"size": "200%"}, "fontColor": '#000'}
+	}
+  }},
+ "data": {
+  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman", "Bashqort", "Chuvash", "Qashqayi", "Khorasani", "Remainder"],
+  "datasets":[
+   {
+	 "data":[35.88,19.02,12.97,10.81,8.21,3.03,2.38,2.16,1.95,0.65,0.52,0.43,0.43,1.57],
+    "label":"Share of Turkic speakers by percent","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(220,20,20,.8)",
+	 	"rgba(20,220,20,.8)",
+		"rgba(20,20,220,.8)",
+		"rgba(43,153,252,.8)",
+		"rgba(0,220,220,.8)",
+		"rgba(0,132,61,.8)",
+		"rgba(255,0,0,.8)",
+		"rgba(255,255,20,.8)",
+		"rgba(0,220,255,.8)",
+		"rgba(0,112,255,.8)",
+		"rgba(255,223,0,.8)",
+		"rgba(227,172,59,.8)",
+		"rgba(162,38,11,.8)",
+		"rgba(255,255,255,.8)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+				<section>
+					<h2>Language vitality: Turkic</h2>
+					<div class="highlight-box">
+						<h4>Turkic languages by number of speakers</h4>
+						<p>&gt;225 million speakers total</p>
+						<hr/>
+						<div style="height:580px">
+							<canvas data-chart="doughnut" >
+<!--
+{
+ "data": {
+  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman","remainder"],
+  "datasets":[
+   {
+	 "data":[35.88,19.02,12.97,10.81,8.21,3.03,2.38,2.16,1.95,3.60],
+    "label":"Share of Turkic speakers by percent","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(220,20,20,.8)",
+	 	"rgba(20,220,20,.8)",
+		"rgba(20,20,220,.8)",
+		"rgba(43,153,252,.8)",
+		"rgba(0,220,220,.8)",
+		"rgba(0,132,61,.8)",
+		"rgba(255,0,0,.8)",
+		"rgba(255,255,20,.8)",
+		"rgba(0,220,255,.8)",
+		"rgba(255,255,255,.8)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+						</div>
+						<hr/>
+						<p>remainder: ~31 languages</p>
+					</div>
+				</section>
+
+				<section>
+				<section>
+					<h2>Language vitality: Turkic</h2>
+					<div class="highlight-box">
+						<h4>Turkic languages by vitality</h4>
+						<p>40 languages, only 11 "normal"</p>
+						<hr/>
+						<div style="height:580px">
+							<canvas data-chart="doughnut" >
+<!--
+{
+ "data": {
+  "labels": ["\"Normal\"", "Vulnerable", "Definitely Endangered", "Severely Endangered", "Critically Endangered"],
+  "datasets":[
+   {
+	 "data":[11, 9, 5, 6, 9],
+    "label":"Turkic languages by endangerement","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(196,46,28,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+						</div>
+						<hr/>
+						<p>(estimates probably overly optimistic)</p>
+					</div>
+				</section>
+				<!-- different green-to-red scale
+					 "backgroundColor": ["rgba(20,220,20,.8)",
+				 	"rgba(112,220,20,.8)",
+				 	"rgba(220,220,20,.8)",
+					"rgba(252,186,20,.8)",
+					"rgba(220,20,20,.8)"
+				  ]
+				-->
+				<section>
+					<h2>The full list</h2>
+					<table class="supershrink float-left booktabs">
+						<tr><th>language</th><th>№</th><th>vitality</th></tr>
+						<tr>
+							<td>Turkish</td>
+							<td class="raln">83M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Uzbek</td>
+							<td class="raln">44M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Azərbaycani</td>
+							<td class="raln">30M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Uyghur</td>
+							<td class="raln">25M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Kazakh</td>
+							<td class="raln">19M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Turkmen</td>
+							<td class="raln">7M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Tatar</td>
+							<td class="raln">5.5M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Kyrgyz</td>
+							<td class="raln">5M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Iraqi Türkman</td>
+							<td class="raln">4.5M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal*</td>
+						</tr>
+						<tr>
+							<td>Bashqort</td>
+							<td class="raln">1.5M</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Chuvash</td>
+							<td class="raln">1.2M</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qashqayi</td>
+							<td class="raln">1M</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Khorasani</td>
+							<td class="raln">1M</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qaraqalpaq</td>
+							<td class="raln">650K</td>
+							<td class="caln" style="background-color: rgba(68,100,65,1)">normal</td>
+						</tr>
+						<tr>
+							<td>Crimean Tatar</td>
+							<td class="raln">600K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Qumuq</td>
+							<td class="raln">450K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Qarachay&#8209;Balqar</td>
+							<td class="raln">400K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Sakha</td>
+							<td class="raln">400K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Tuvan</td>
+							<td class="raln">300K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Urum</td>
+							<td class="raln">200K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+					</table>
+					<table class="supershrink float-right booktabs">
+						<tr><th>language</th><th>№ speakers</th><th>vitality</th></tr>
+						<tr>
+							<td>Gagauz</td>
+							<td class="raln">150K</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Siberian&nbsp;Tatar</td>
+							<td class="raln">100K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Noghay</td>
+							<td class="raln">100K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Dobrujan&nbsp;Tatar</td>
+							<td class="raln">70K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Salar</td>
+							<td class="raln">70K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Southern&nbsp;Altay</td>
+							<td class="raln" rowspan="2" style="vertical-align: middle">60K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Northern&nbsp;Altay</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Khakas</td>
+							<td class="raln">50K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Khalaj</td>
+							<td class="raln">20K</td>
+							<td class="caln" style="background-color: rgba(112,163,78,1)">vulnerable</td>
+						</tr>
+						<tr>
+							<td>Äynu</td>
+							<td class="raln">6K</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Western&nbsp;Yugur</td>
+							<td class="raln">5K</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Shor</td>
+							<td class="caln" class="raln">3K</td>
+							<td style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Dolgan</td>
+							<td class="raln">1K</td>
+							<td class="caln" style="background-color: rgba(212,176,74,1)">definitely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Dukhan</td>
+							<td class="raln">&lt;500</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Krymchak</td>
+							<td class="raln">200</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Ili&nbsp;Turki</td>
+							<td class="raln">100</td>
+							<td class="caln" style="background-color: rgba(196,46,28,1)">severely&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Tofa</td>
+							<td class="raln">100</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Karaim</td>
+							<td class="raln">&lt;100</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Chulym</td>
+							<td class="raln">&lt;50</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+						<tr>
+							<td>Fu&#8209;yü&nbsp;Gyrgys</td>
+							<td class="raln">&lt;50</td>
+							<td class="caln" style="background-color: rgba(117,26,24,1)">critically&nbsp;endangered</td>
+						</tr>
+					</table>
+				</section>
 				</section>
 
 				<section>
@@ -139,6 +504,10 @@
 		<script src="./reveal.js/plugin/markdown/markdown.js"></script>
 		<script src="./reveal.js/plugin/highlight/highlight.js"></script>
 		<script src="./reveal.js/plugin/zoom/zoom.js"></script>
+
+		<!-- Chart plugin -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/chart/plugin.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"></script>
 		
 		<script>
 
@@ -188,6 +557,45 @@
 				//Reveal.configure({ slideNumber: 'c' });
 				slideNumber: 'c',
 
+	chart: {
+		defaults: {
+			color: 'lightgray', // color of labels
+			scale: {
+				beginAtZero: true,
+				ticks: { stepSize: 1 },
+				grid: { color: "lightgray" } , // color of grid lines
+			},
+			plugins: {
+				tooltip: {
+					bodyFont: {size: 30}
+				},
+				legend: {
+					position: "right",
+					labels: {
+						font: { size: 40 },
+						fontColor: '#000'
+					}
+				},
+				datalabels: {
+					display: true,
+					font: {size: 20},
+				},
+			}
+		},
+		line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] },
+		bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]},
+		pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+		doughnut: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ],
+		options: {
+			plugins: {
+				datalabels: {
+					display: true,
+					font: {size: 20},
+				},
+			},},
+		},
+	},
+
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
 				// parallaxBackgroundSize: '2100px 900px',
@@ -205,7 +613,7 @@
 				]
 				***/
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealZoom, RevealHighlight, RevealNotes ]
+				plugins: [ RevealChart, RevealMarkdown, RevealZoom, RevealHighlight, RevealNotes ]
 			});
 
 		</script>
