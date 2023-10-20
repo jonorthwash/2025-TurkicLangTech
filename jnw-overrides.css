@@ -850,6 +850,57 @@ g.text text:nth-of-type(2) tspan {
 	align-items: start;
 }
 
+.checklist {
+	list-style: none !important;
+	margin-left: none;
+}
+
+.checklist li::before {
+	color: lightgreen;
+	/* content: "✔ "; */
+	content: '\2714';
+	width: 40px !important;
+	margin-left: -40px !important;
+}
+
+li.plus::before {
+	color: lightgreen;
+	content: "+ ";
+	width: 40px !important;
+	margin-left: -40px !important;
+}
+li.plus {
+	color: lightgreen;
+}
+li.minus::before {
+	color: #e05b58;
+	content: "− ";
+	width: 40px !important;
+	margin-left: -40px !important;
+}
+li.minus {
+	color: #e05b58;
+}
+li.arrow::before {
+	content: "→ ";
+	width: 40px !important;
+	margin-left: -40px !important;
+}
+
+ul.nobullet {
+	list-style-type: none !important;
+	margin:0;
+	padding:0;
+}
+
+ul.nobullet ul {
+	margin-left: 60px;
+}
+
+.faded {
+	opacity: 0.5;
+}
+
 refs {
 	font-size: 50%;
 }

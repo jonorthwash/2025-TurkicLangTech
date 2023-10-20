@@ -702,7 +702,7 @@ unused
 				<section>
 					<h2>So what can we do?</h2>
 					<div class="highlight-box">
-						<h4>..</h4>
+						<h4>Some possibilities</h4>
 						<ul>
 							<li>(Re)submit proposals for ISO codes (Dukhan rejected, Iraqi Türkman pending for 2 years)</li>
 							<li>Contribute to CLDR and other open localisation efforts</li>
@@ -713,39 +713,51 @@ unused
 
 
 				<section>
-					<h2>Open efforts to develop Turkic language technology</h2>
-					<ul>
-						<li>TurkicInterLingua (TIL)</li>
-						<ul class="shrink">
+					<h2>Open/community-based efforts to develop Turkic language technology</h2>
+					<div class="float-left">
+					<div class="highlight-box"><h4>TurkicInterLingua (TIL)</h4>
+						<ul>
 							<li>Machine Translation</li>
 							<li>Other NLP tasks</li>
 						</ul>
-						<li>Apertium</li>
-						<ul class="shrink">
+					</div>
+					<div class="highlight-box"><h4>Apertium</h4>
+						<ul>
 							<li>Machine Translation</li>
 							<li>Morphological transducers</li>
 						</ul>
-						<li>Universal Dependencies</li>
-						<ul class="shrink">
-							<li>Linguistically annotated text corpora</li>
+						<hr/>
+						<p class="shrink">(case study, viz. next slides)</p>
+					</div>
+					<div class="highlight-box"><h4>Universal Dependencies</h4>
+						<div>Linguistically annotated text corpora</div>
+						<hr/>
+						<p class="shrink">Kazakh, Kyrgyz, Tatar, Turkish (×4), Uyghur</p>
 							<!-- Kazakh, Kyrgyz, Tatar, Turkish (×4), Uyghur -->
 						</ul>
-						<li>Common Voice</li>
-						<ul class="shrink">
-							<li>Audio corpora (for speech recognition)</li>
+					</div>
+					</div>
+					<div class="float-right">
+					<div class="highlight-box"><h4>Common Voice</h4>
+						<div>Audio corpora (for speech recognition)</div>
+						<hr/>
+						<p class="shrink">Bashqort (277h), Uyghur (143h), Turkish (119h), Uzbek (257h), Kyrgyz (47h), Tatar (31h), Chuvash (28h), Sakha (8h), Turken (5h), Kazakh (2h), Azərbaycani (1h)</p>
+						<hr>
+						<p class="shrink">not ready: Qaraqalpaq (72%), Tuvan (2%)</p>
 							<!-- bak (277h), uig (143h), tur (119h), uzb (257h), kir (47h), tat (31h), chv (28h), sah (8h), tuk (5h), kaz (2h), azb (1h) | in progress: kaa (72%), tyv (2%) -->
-						</ul>
-						<li>Tesseract</li>
-						<ul class="shrink">
-							<li>Optical Character Recognition (OCR)</li>
+					</div>
+					<div class="highlight-box"><h4>Tesseract</h4>
+						<div>Optical Character Recognition (OCR)</div>
+						<hr/>
+						<p class="shrink">Azərbaycani (×2), Kazakh, Kyrgyz, Tatar, Turkish, Uyghur, Uzbek (×2)</p>
 							<!-- aze, aze_Cyrl, kaz, kir, tat, tur, uig, uzb, uzb_Cyrl, -->
-						</ul>
+					</div>
+					</div>
 				</section>
 
 				<section>
 					<h2>Morphological transducers</h2>
-					<div style="text-align: left;">
-					Example:<lg>kaz</lg>
+					<div class="highlight-box"><h4>Example:<lg>kaz</lg></h4>
 					<table class="nolines shrink">
 						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">Алмасы</b></td>
 						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
@@ -772,11 +784,13 @@ unused
 					ал<tag>vaux</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag>
 						</td></tr>
 					</table>
-					<p>“Downstream tasks” (uses):</p>
-					<ul>
+					</div>
+					<div class="highlight-box"><h4>“Downstream tasks” (uses):</h4>
+					<ul class="shrink">
 						<li>Spell checkers</li>
 						<li>Component of machine translation systems</li>
 						<li>Computer-assisted language-learning (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
+						<li>Script conversion</li>
 						<li>Other NLP tasks and research</li>
 						<li>Whatever else you can imagine</li>
 					</ul>
@@ -860,30 +874,24 @@ unused
 					</ul>
 				</section>
 
-				<section data-auto-animate>
-					<div class="box" data-id="important-points-repeated" style="text-align: center">
-						<ol start="4">
-							<li>Every resource developed is (at least largely) <span class="highlight">symbolic</span></li>
-						</ol>
-						<h3></h3>
-						Symbolic vs. corpus-based (neural, statistical)<br />
-						Symbolic approaches encode linguistic generalisations
-					</div>
+				<section>
+					<h2>Symbolic models (compared to corpus-based)</h2>
 					<ul class="nobullet">
 						<li class="plus">Advantages:</li>
 						<ul>
 							<li>No requirement for giant corpora</li>
+							<li>No powerful computers required</li>
 							<li>More precise than corpus-based</li>
 							<li>Easy to fix errors and expand coverage</li>
 							<li>(In MT:) lots of "free rides" for related languages</li>
+							<li>Support for multiple orthographies ~trivial <refs>(<ref>Washington et al. 2020</ref>, <ref>Washington et al. 2021</ref>)</refs></li>
+							<li>(Essentially) single development cycle <refs>(<ref>Tyers et al. 2015</ref>, <ref>Butt 2020</ref>)</refs></li>
 							<li>Only need knowledge of language, not mathematics and programming</li>
-							<li>Support for multiple orthographies ~trivial <refs>(<ref>Washington et al. (2020)</ref>, <ref>Washington et al. (2021)</ref>)</refs></li>
-							<li>(Essentially) single development cycle <refs>(<ref>Tyers et al. (2015)</ref>, <ref>Butt (2020)</ref>)</refs></li>
 						</ul>
 						<li class="minus">Disadvantages:</li>
 						<ul>
 							<li>...Need knowledge of language, not mathematics and programming</li>
-							<li>Takes time to develop</li>
+							<li>Takes time to develop (human time, not computing time)</li>
 						</ul>
 						<li class="arrow">i.e., good for <span class="highlight">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
 						<ul>
@@ -893,23 +901,16 @@ unused
 					</ul>
 				</section>
 
-				<section data-auto-animate>
-					<div class="box" data-id="important-points-repeated" style="text-align: center">
-						<ol start="3">
-							<li>Every resource developed is <span class="highlight">free/open source</span><!-- , and easily corrected or augmented --></li>
-
-						</ol>
-						<h3></h3>
-					<!-- /div>
-
-					<div class="box" -->
+				<section>
+					<h2>Free/Open Source (versus proprietary)</h2>
+					<div class="highlight-box" >
+						<h4>Free/Open Source</h4>
 						<!-- Free = бесплатно + свободно<br />
 						Open = открыто + доступно -->
 						<span class="highlight">Free</span> = as in speech (and beer)<br />
 						<span class="highlight">Open</span> = made available (and insides showing)
 					</div>
-					<ul class="nobullet">
-						<li>What this means (ideally / in the case of Apertium):</li>
+					<div class="highlight-box"><h4>What this means (ideally / in the case of Apertium):</h4>
 						<ul>
 							<li>Available for anyone to use or modify</li>
 							<li>Robust community, support from developers</li>
@@ -917,8 +918,9 @@ unused
 							<li>Abandoned projects can be resumed or repurposed</li>
 							<li>Standards / tools for wider integration/use <span class="shrink">(e.g., Apertium: website platform, integration into OmegaT &amp; Wikipedia Content Translation tool)</span></li>
 						</ul>
-						<li>→ i.e., <!-- in principle --><span class="highlight">maximally accessible to language communities</span></li>
-						<li class="fragment">still some bars to entry:
+						<p>→ i.e., <!-- in principle --><span class="highlight">maximally accessible to language communities</span></p>
+					</div>
+						<!-- li class="fragment">still some bars to entry:
 							<ul>
 								<li>finding IRC channel &amp; issue tracker</li>
 								<li>contributing code...</li>
@@ -929,20 +931,66 @@ unused
 								<li>individual attention and support</li>
 								<li>close collaborations</li>
 							</ul>
-						</li>
+						</li -->
 					</ul>
 
 				</section>
 
-
-				<section>
+				<!-- section>
 					<h2>Corpus-based approaches vs. symbolic approaches</h2>
 					(CITE Butt 2021)
-				</section>
+				</section -->
 
 				<section>
 					<h2>The real challenges</h2>
-					(CITE Moshagen &amp; Trosterud 2019)
+					<!-- (CITE Moshagen &amp; Trosterud 2019)-->
+					<!-- ul class="shrink nobullet">
+						<li>Manifesto for Open Language Technology</li>
+						<em><ul class="shrink">
+							<li><bbb>Open localisation</bbb>: all software should be localisable independently of the producer of the software</li>
+							<li><bbb>Open interfaces</bbb>: all language-related programming interfaces should be open by default</li>
+							<li><bbb>Open resources</bbb>: all language resources should be open and accessible for everyone, given the permission of the language community</li>
+							<li><bbb>Accessible standards</bbb>: language-related international standards should be respected, fully implemented and implementations should be regularly updated</li>
+						</ul></em>
+					</ul-->
+					<div class="highlight-box">
+						<h4>Problems integrating community efforts</h4>
+						<ul>
+							<li><span class="highlight">Localisation</span>: much software is not localisable independently of the producer of the software</li>
+							<li><span class="highlight">Closed interfaces</span>: language-related programming interfaces are often closed to developers</li>
+							<li><span class="highlight">Closed resources</span>: language resources are closed and not accessible to the public</li>
+							<li><span class="highlight">Disregarded standards</span>: language-related international standards are not respected or fully implemented</li>
+						</ul>
+						<div class="citation raln">(Moshagen &amp; Trosterud 2019)</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Will these efforts help?</h2>
+
+					<p class="fragment">Maybe a little?</p>
+
+					<div class="fragment highlight-box">
+						<h4>What communities actually need</h4>
+						<ul>
+							<li>Support for language use, maintenance, revitalisation</li>
+							<li>From government, society, other institutions</li>
+							<li>(not just digital technology corporations)</li>
+						</ul>
+					</div>
+
+					<div class="fragment highlight-box">
+						<h4>How to make these things happen</h4>
+						<p>my best suggestion:</p>
+						<hr/>
+						<p>
+							general tools of change—organise, speak out
+						</p>
+					</div>
+					<div class="fragment highlight-box">
+						<h4>In terms of technology</h4>
+						<p>(also) find need that you can contribute to and contribute</p>
+					<p class="fragment">
 				</section>
 
 
