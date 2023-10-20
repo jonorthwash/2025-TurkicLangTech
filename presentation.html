@@ -490,7 +490,7 @@ unused
 						<p>anything linguistic that involves interacting with [digital] technology</p>
 						<hr/>
 						<ul>
-							<li>input methods (keyboards, "soft" keyboards, speech recognition)</li>
+							<li>input methods (keyboards, mobile keyboards, speech recognition)</li>
 							<li>localisation (e.g., text displayed in a program)</li>
 							<li>screen readers (text-to-speech)</li>
 							<li>voice assistants</li>
@@ -523,6 +523,14 @@ unused
 						<h4>What happens without language technology</h4>
 						<p style="margin-bottom: 0">"Digital language death" (i.e., loss of intergenerational transmission)</p>
 						<div class="citation raln">(Kornai 2013)</div>
+						<aside class="notes">
+						<ul class="shrink">
+							<li>"only" ⅓ of 7000 languages are officially considered endangered</li>
+							<li>but only 5% have sufficient level of access to language technology to sustain cultural transmission in digital age</li>
+							<li>implication: <span class="highlight">95% of languages will "die off"</span>; need language technology</li>
+						</ul>
+
+						</aside>
 					</div>
 
 					<div class="highlight-box fragment">
@@ -666,11 +674,266 @@ unused
 								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Chuvash</td></tr>
 								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Tatar, Uzbek (Cyrillic)</td></tr>
 								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Sakha, Uyghur, Uzbek (Arabic)</td></tr>
+								<tr style="background-color:rgba(196,46,28,1)"><td>being added</td><td>1: Tuvan</td></tr>
 								<tr style="background-color:rgba(117,26,24,1)"><td>missing</td><td>~30 ...</td></tr>
 							</table>
 						</div>
 						
 				</section>
+
+				<section>
+					<h2>How can we add support for missing languages?</h2>
+
+					<div class="highlight-box">
+						<h4>The short answer</h4>
+						<p>We can't.</p>
+					</div>
+					
+					<div class="highlight-box">
+						<h4>A slightly longer answer</h4>
+						<p>By convincing each company that each language will bring in more money than they will spend to add it.</p>
+						<p>(except it probably won't, and they know that)</p>
+					</div>
+
+					<p class="fragment">So what can we do?</p>
+
+				</section>
+
+				<section>
+					<h2>So what can we do?</h2>
+					<div class="highlight-box">
+						<h4>..</h4>
+						<ul>
+							<li>(Re)submit proposals for ISO codes (Dukhan rejected, Iraqi Türkman pending for 2 years)</li>
+							<li>Contribute to CLDR and other open localisation efforts</li>
+							<li>Develop our own language technology?</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Open efforts to develop Turkic language technology</h2>
+					<ul>
+						<li>TurkicInterLingua (TIL)</li>
+						<ul class="shrink">
+							<li>Machine Translation</li>
+							<li>Other NLP tasks</li>
+						</ul>
+						<li>Apertium</li>
+						<ul class="shrink">
+							<li>Machine Translation</li>
+							<li>Morphological transducers</li>
+						</ul>
+						<li>Universal Dependencies</li>
+						<ul class="shrink">
+							<li>Linguistically annotated text corpora</li>
+							<!-- Kazakh, Kyrgyz, Tatar, Turkish (×4), Uyghur -->
+						</ul>
+						<li>Common Voice</li>
+						<ul class="shrink">
+							<li>Audio corpora (for speech recognition)</li>
+							<!-- bak (277h), uig (143h), tur (119h), uzb (257h), kir (47h), tat (31h), chv (28h), sah (8h), tuk (5h), kaz (2h), azb (1h) | in progress: kaa (72%), tyv (2%) -->
+						</ul>
+						<li>Tesseract</li>
+						<ul class="shrink">
+							<li>Optical Character Recognition (OCR)</li>
+							<!-- aze, aze_Cyrl, kaz, kir, tat, tur, uig, uzb, uzb_Cyrl, -->
+						</ul>
+				</section>
+
+				<section>
+					<h2>Morphological transducers</h2>
+					<div style="text-align: left;">
+					Example:<lg>kaz</lg>
+					<table class="nolines shrink">
+						<tr><th style="align: right; !important;">Input / Output:</th><td><b style="font-size: 125% !important">Алмасы</b></td>
+						<tr><th><!-- span class="highlight-green">↕</span --></th><td><span class="highlight-green large center" style="margin-left: 1.5em; text-align: center !important; font-weight: bold;">↕</span></td></tr>
+						<tr><th style="vertical-align: top !important; align: right;">Output / Input:</th><td>
+					<!-- алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>pl</tag>
+					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag>+е<tag>cop</tag><tag>aor</tag><tag>p3</tag><tag>sg</tag>
+					-->
+					алма<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					алмас<tag>n</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					Алма<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					Алмас<tag>np</tag><tag>ant</tag><tag>m</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					<!-- Алмас<tag>np</tag><tag>ant</tag><tag>f</tag><tag>px3sp</tag><tag>nom</tag> -->
+					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>vaux</tag><tag>neg</tag><tag>gpr_fut</tag><tag>subst</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>v</tag><tag>tv</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag><br/>
+					ал<tag>vaux</tag><tag>neg</tag><tag>ger_fut</tag><tag>px3sp</tag><tag>nom</tag>
+						</td></tr>
+					</table>
+					<p>Range of uses:</p>
+					<ul>
+						<li>Spell checkers</li>
+						<li>Component of machine translation systems</li>
+						<li>Computer-assisted language-learning (CALL) <!-- e.g., Revita, <a href="https://revita.cs.helsinki.fi">revita.cs.helsinki.fi</a>) --></li>
+						<li>"Downstream" tasks and other research</li>
+						<li>Whatever else you can imagine</li>
+					</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>Turkic transducers I've contributed to</h2>
+					<p>by naïve coverage &amp; lexicon size + distribution</p>
+					<div style="text-align: center"><!--  style="margin-top: -6.1em"  -->
+						<div style="width: 32%; float:left; margin-right: 1%">
+							<img src="img/lgs1.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight-green">Production-level</span><br/>92%-98% coverage<br/>
+							<span style="font-size: 60%">(<bbb>Tatar</bbb>, <bbb>Sakha</bbb>, <bbb>Kazakh</bbb>, <bbb>Turkish</bbb>, <bbb>Kyrgyz</bbb>, <bbb>Crimean Tatar</bbb>, <bbb>Tuvan</bbb>)</span>
+						</div>
+						<div style="width: 35%; float:left; margin-right: 1%">
+							<img src="img/lgs2.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight">Working</span><br/>88-93% coverage<br/>
+							<span style="font-size: 60%">(Chuvash, <bbb class="maybe">Uzbek</bbb>, <bbb>Bashqort</bbb>, <bbb class="maybe">Qaraqalpaq</bbb>, <bbb class="maybe">Uyghur</bbb>, Karachay-Balkar, <span class="faded"><bbb>Gagauz</bbb></span>, <bbb>Kumyk</bbb>)</span>
+						</div>
+						<div style="width: 30%; float:left;">
+							<img src="img/lgs3.svg" style="display: block; margin-left: auto; margin-right: auto;"/>
+							<span class="highlight-red">Prototype</span><br/>&lt;80% coverage<br />
+							<span style="font-size: 60%">(<span class="faded">Azerbaycani</span>, Iraqi Türkman, <bbb class="faded maybe">Turkmen</bbb>, Noghay, Khakas, Altay, <span class="faded">Ottoman</span>)</span>
+						</div>
+						<div class="small">key: <span class="faded">not directly involved in</span>, <bbb>published</bbb></div>
+					</div>
+
+					<span class="large">(</span><div style="display: inline-block; width: 95%; margin-top: 0.75em">
+						<refs>
+							<ref class="highlight-cyan">Washington et al. (2012)</ref><!-- kir -->,
+							<ref class="highlight-cyan">Tyers et al. (2012)</ref><!-- tat, bak (tat-bak) -->,
+							<ref class="highlight-cyan">Salimzyanov et al. (2013)</ref><!-- kaz (kaz-tat)-->,
+							<ref class="highlight-cyan">Washington et al. (2014)</ref><!-- kaz, kum, tat -->,
+							<ref class="highlight-cyan">Tyers et al. (2016)</ref><!-- tyv -->,
+							<ref class="highlight-cyan">Washington et al. (2016)</ref><!-- tyv -->,
+							<ref class="highlight-cyan">Bayatlı et al. (2018)</ref><!-- tur (kaz-tur) -->,
+							<ref class="highlight-cyan">Tyers et al. (2019)</ref><!-- crh -->,
+							<ref class="highlight-cyan">Gökırmak et al. (2019)</ref><!-- crh, tur (crh-tur) -->,
+							<ref class="highlight-cyan">Washington et al. (2019)</ref><!-- all -->,
+							<ref class="highlight-cyan">Washington et al. (2020)</ref><!-- crh, kaz, kir, kaa, tuk, uig, uzb -->,
+							<ref class="highlight-cyan">Ivanova et al. (2021, 2022)</ref><!-- sah -->
+						</refs>
+					</div><span class="large">)</span>
+				</section>
+
+
+				<section>
+					<h2>Transducers I've contributed to:<br/>downstream tasks</h2>
+					<ul class="nobullet">
+						<li>Kazakh</li>
+						<ul class="shrink">
+							<li>Used in other NLP research in Kazakhstan</li>
+							<li>Use as segmenter in a shared task</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+							<li>Verb paradigm generator</li>
+						</ul>
+						<li>Tatar</li>
+						<ul class="shrink">
+							<li>Used to annotate Tatar National Corpus</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+						<li>Sakha</li>
+						<ul class="shrink">
+							<li>Used in Revita (CALL)</li>
+							<li>Used for UniMorph shared task</li>
+						</ul>
+						<li>Tuvan</li>
+						<ul class="shrink">
+							<li>Used for UniMorph shared task</li>
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+						<li>Uyghur</li>
+						<ul class="shrink">
+							<li>Used in corpus-based phonology research</li>
+						</ul>
+						<li>Kyrgyz</li>
+						<ul class="shrink">
+							<li>Spell checker for Word &amp; LibreOffice</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<div class="box" data-id="important-points-repeated" style="text-align: center">
+						<ol start="4">
+							<li>Every resource developed is (at least largely) <span class="highlight">symbolic</span></li>
+						</ol>
+						<h3></h3>
+						Symbolic vs. corpus-based (neural, statistical)<br />
+						Symbolic approaches encode linguistic generalisations
+					</div>
+					<ul class="nobullet">
+						<li class="plus">Advantages:</li>
+						<ul>
+							<li>No requirement for giant corpora</li>
+							<li>More precise than corpus-based</li>
+							<li>Easy to fix errors and expand coverage</li>
+							<li>(In MT:) lots of "free rides" for related languages</li>
+							<li>Only need knowledge of language, not mathematics and programming</li>
+							<li>Support for multiple orthographies ~trivial <refs>(<ref>Washington et al. (2020)</ref>, <ref>Washington et al. (2021)</ref>)</refs></li>
+							<li>(Essentially) single development cycle <refs>(<ref>Tyers et al. (2015)</ref>, <ref>Butt (2020)</ref>)</refs></li>
+						</ul>
+						<li class="minus">Disadvantages:</li>
+						<ul>
+							<li>...Need knowledge of language, not mathematics and programming</li>
+							<li>Takes time to develop</li>
+						</ul>
+						<li class="arrow">i.e., good for <span class="highlight">community partnerships</span>:<!-- in principle --><!-- span class="highlight">community-maintainable</span --></li>
+						<ul>
+							<li>Engagement between different types of experts, as equals</li>
+							<li>Less prone to extractive &amp; other marginalising approaches</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section data-auto-animate>
+					<div class="box" data-id="important-points-repeated" style="text-align: center">
+						<ol start="3">
+							<li>Every resource developed is <span class="highlight">free/open source</span><!-- , and easily corrected or augmented --></li>
+
+						</ol>
+						<h3></h3>
+					<!-- /div>
+
+					<div class="box" -->
+						<!-- Free = бесплатно + свободно<br />
+						Open = открыто + доступно -->
+						<span class="highlight">Free</span> = as in speech (and beer)<br />
+						<span class="highlight">Open</span> = made available (and insides showing)
+					</div>
+					<ul class="nobullet">
+						<li>What this means (ideally / in the case of Apertium):</li>
+						<ul>
+							<li>Available for anyone to use or modify</li>
+							<li>Robust community, support from developers</li>
+							<li>Able to easily compare to other systems</li>
+							<li>Abandoned projects can be resumed or repurposed</li>
+							<li>Standards / tools for wider integration/use <span class="shrink">(e.g., Apertium: website platform, integration into OmegaT &amp; Wikipedia Content Translation tool)</span></li>
+						</ul>
+						<li>→ i.e., <!-- in principle --><span class="highlight">maximally accessible to language communities</span></li>
+						<li class="fragment">still some bars to entry:
+							<ul>
+								<li>finding IRC channel &amp; issue tracker</li>
+								<li>contributing code...</li>
+						</ul></li>
+						<li class="fragment">solutions?
+							<ul>
+								<li>workshops for prospective contributors</li>
+								<li>individual attention and support</li>
+								<li>close collaborations</li>
+							</ul>
+						</li>
+					</ul>
+
+				</section>
+
 
 				<section>
 					<h2>Corpus-based approaches vs. symbolic approaches</h2>
