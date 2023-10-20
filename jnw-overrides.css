@@ -7,6 +7,7 @@ h2 {
 }
 h3 {
 	margin-bottom: 3pt !important;
+	font-size: 100% !important ;
 }
 .instructions {
 	text-align: right;
@@ -659,6 +660,9 @@ blockquote {
 }
 .large {
 	font-size: 150% !important ;
+}
+.extralarge {
+	font-size: 200% !important ;
 }
 .caption {
 	font-size: 75% !important ;
