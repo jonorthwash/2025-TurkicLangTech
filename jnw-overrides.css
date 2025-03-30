@@ -912,3 +912,58 @@ refs {
 ref {
 	color: silver;
 }
+
+.papers, .papers:before, .papers:after
+{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.1), 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/*** inspired by https://www.sitepoint.com/css3-shuffled-paper/ ***/
+.papers
+{
+	position: relative;
+	/* width: 50%; */
+	padding: 1px;
+	margin: 1px auto;
+	/* transform: translate(0.1in, 0.3in); */
+	top: calc(var(--r-block-margin) + 10px);
+}
+
+.papers:before, .papers:after
+{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.papers:after {
+	/* -webkit-transform: rotateZ(2.5deg);
+	-o-transform: rotate(2.5deg);
+	transform: rotateZ(2.5deg); */
+	transform: translate(10px, -10px);
+	z-index: -2;
+}
+
+.papers:before
+{
+	/* -webkit-transform: rotateZ(-2.5deg);
+	-o-transform: rotate(-2.5deg);
+	transform: rotateZ(-2.5deg); */
+	transform: translate(5px, -5px);
+	z-index: -1;
+}
+
+.noMax {
+	max-width: 100% !important;
+}
+
+.centered-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
