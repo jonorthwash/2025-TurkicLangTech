@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Minoritised languages and language technology: engaged research and teaching</title>
+		<title>Minoritised languages and language technology: engaged scholarship and teaching</title>
 
-		<meta name="description" content="Minoritised languages and language technology: engaged research and teaching">
+		<meta name="description" content="Minoritised languages and language technology: engaged scholarship and teaching">
 		<meta name="author" content="Jonathan North Washington">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,7 @@
 			<div class="slides">
 
 				<section id="title" data-state="no-toc-progress">
-					<h1>Minoritised languages and language technology:<br/>engaged research and teaching</h1>
+					<h1>Minoritised languages and language technology:<br/>engaged scholarship and teaching</h1>
 
 					<div style="padding-top:1in; padding-bottom: 2in;">
 						<div><b>Jonathan North Washington</b><br />
@@ -703,7 +703,7 @@ unused
   "labels": ["3", "2", "1", "0"],
   "datasets":[
    {
-	 "data":[0.05, 0.125, 0.3, 0.525],
+	 "data":[2, 5, 12, 21],
     "label":"Mobile keyboard coverage of Turkic: Google Gboard","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": ["rgba(68,100,65,1)",
@@ -713,7 +713,7 @@ unused
 	  ]
    },
    {
-	 "data":[0.05, 0.325, 0.625],
+	 "data":[2, 13, 25],
     "label":"Mobile keyboard coverage of Turkic: Microsoft Swiftkey","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": [
@@ -723,7 +723,7 @@ unused
 	  ]
    },
    {
-	 "data":[0.2, 0.8],
+	 "data":[8, 32],
     "label":"Mobile keyboard coverage of Turkic: Apple Quicktype","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": [
@@ -769,7 +769,7 @@ unused
   "labels": ["2", "1", "0"],
   "datasets":[
    {
-	 "data":[0.05, 0.175, 0.775],
+	 "data":[2, 7, 31],
     "label":"MT coverage of Turkic: Yandex","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": [
@@ -779,7 +779,7 @@ unused
 	  ]
    },
    {
-	 "data":[0.2, 0.8],
+	 "data":[8, 32],
     "label":"MT coverage of Turkic: Google","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": [
@@ -856,7 +856,7 @@ unused
   "labels": ["6", "2", "1", "0"],
   "datasets":[
    {
-	 "data":[0.025, 0.125, 0.05, 0.8],
+	 "data":[1, 5, 2, 32],
     "label":"TTS coverage of Turkic: Android","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": ["rgba(68,100,65,1)",
@@ -866,7 +866,7 @@ unused
 	  ]
    },
    {
-	 "data":[0.025, 0.975],
+	 "data":[1, 39],
     "label":"TTS coverage of Turkic: Siri","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": [
@@ -917,7 +917,7 @@ unused
   "labels": ["modern", "moderate", "basic", "unrated", "missing"],
   "datasets":[
    {
-	 "data":[0.13, 0.022, 0.087, 0.174, 0.587],
+	 "data":[6, 1, 4, 8, 27],
     "label":"CLDR coverage of Turkic","backgroundColor":"rgba(20,220,220,.8)",
     "borderColor": "rgba(255,255,255,1)",
 	 "backgroundColor": ["rgba(68,100,65,1)",
@@ -952,6 +952,8 @@ unused
 							</div>
 							(CLDR)
 						</div>
+						<div style="clear: both">&nbsp;</div>
+						
 					</section>
 					<section>
 					<h2>Existing Turkic Language technology</h2>
@@ -959,7 +961,31 @@ unused
 						<div class="highlight-box">
 							<h4>ISO 639 language codes</h4>
 								<p>(baseline for any hope of language technology)</p>
-								<p>None currently for: Iraqi Türkman, Fu-yü Gyrgys, Dukhan</p>
+								<hr/>
+							<div style="height:580px">
+								<canvas data-chart="doughnut" >
+<!--
+{
+ "data": {
+  "labels": ["✔", "✘"],
+  "datasets":[
+   {
+	 "data":[0.925, 0.075],
+    "label":"ISO 639 codes","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"#90ee90",
+		"#e05b58"
+	  ]
+   }
+  ]
+ }
+}
+-->
+								</canvas>
+						</div>
+								<hr/>
+								<p><span class="highlight-red">Currently missing:</span> Iraqi Türkman, Fu-yü Gyrgys, Dukhan</p>
 						</div>
 						<!-- CLDR (for localisation): az, az_Cyrl, cv, kk, ky, tt, tr, tk, ug, uz, uz_Arab, uz_Cyrl, sah
 							az:modern
@@ -978,23 +1004,23 @@ unused
 							ug:_
 							-->
 
-						<div class="highlight-box">
+						<!-- div class="highlight-box">
 							<h4>CLDR</h4>
 							<p>(baseline localisation data used widely)</p>
 							<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
-								<tr><th>coverage</th><th>languages</th></tr>
+								<tr><th>coverage</th><th>languages</th></tr -->
 								<!-- tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
 								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Chuvash</td></tr>
 								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Tatar, Uzbek (Cyrillic)</td></tr>
 								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Sakha, Uyghur, Uzbek (Arabic)</td></tr>
 								<tr style="background-color:rgba(196,46,28,1)"><td>being added</td><td>1: Tuvan</td></tr -->
-								<tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
+								<!-- 2025 tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
 								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Tatar</td></tr>
 								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Uzbek (Cyrillic), Chuvash, Sakha, Uyghur</td></tr>
 								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Uzbek (Arabic), Kazakh (Arabic), Tuvan, Qaraqalpaq, Qaraqalpaq (Latin), Bashqort</td></tr>
 								<tr style="background-color:rgba(117,26,24,1)"><td>missing</td><td>~30 ...</td></tr>
 							</table>
-						</div>
+						</div -->
 						
 				</section>
 
