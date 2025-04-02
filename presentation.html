@@ -687,25 +687,115 @@ unused
 					<h2>Existing Turkic Language technology</h2>
 						<!--  Turkish, Uzbek, Azerbaycani, Uyghur, Kazakh, Turkmen, Tatar, Kyrgyz, Bashqort, Iraqi Turkmen, Chuvash, Qashqai, Khorasani, Qaraqalpaq, Crimean Tatar, Qumuq, Qarachay-Balqar, Sakha, Tuvan, Urum, Gagauz, Siberian Tatar, Nogay, Salar, Southern Altay, Khakas, Khalaj, Yughur, Shor, Dolgan, Ili, Tofa, Northern Altay, Krymchak, Karaim, Chulym, Fu-yü Gyrgys, Dukhan -->
 						<!-- Localisation, Keyboard, Translate, Voice assistant -->
-				
-						<div class="highlight-box">
+					<div class="highlight-box float-left">
+						<h4>Mobile keyboards</h4>
+						<!--
+							Apple Quickype: 8/40
+							Google Gboard: 2 (×3), 5 (×2), 12 (×1)
+							Microsoft Swiftkey: 2 (×2), 13 (×1)
+						-->
+
+						<div style="height:280px">
+							<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["3", "2", "1", "0"],
+  "datasets":[
+   {
+	 "data":[0.05, 0.125, 0.3, 0.525],
+    "label":"Mobile keyboard coverage of Turkic: Google Gboard","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[0.05, 0.325, 0.625],
+    "label":"Mobile keyboard coverage of Turkic: Microsoft Swiftkey","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[0.2, 0.8],
+    "label":"Mobile keyboard coverage of Turkic: Apple Quicktype","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+						</div>
+						(Google, Microsoft, Apple)
+
+
+						</div>
+						<!-- div class="highlight-box">
 							<h4>Mobile keyboards</h4>
 								<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
 									<tr><th>keyboard</th><th colspan="2">languages supported</th><th>missing</th></tr>
 									<tr><td>Apple&nbsp;QuickType</td><td class="raln">8:</td><td>Azərbaycani, Chuvash, Kazakh, Kyrgyz, Turkish, Turkmen, Uyghur, Uzbek</td><td>~32: ...</td></tr>
 									<tr><td>Google&nbsp;Gboard</td><td class="raln">19:</td><td>Azərbaycani (×3), Bashqort, Chuvash, Crimean Tatar (×2), Gagauz (×3), Kazakh, Khorasani (×2), Kyrgyz, Qarachay-Balqar, Qaraqalpaq (×2), Qashqayi, Sakha, Tatar, Turkish (×2), Turkmen, Tuvan, Urum, Uyghur, Uzbek (×2)</td><td>~21: ...</td></tr>
 									<tr><td>Microsoft&nbsp;Swiftkey</td><td class="raln">15:</td><td>Azərbaycani (×2), Bashqort, Chuvash, Gagauz, Kazakh (×2), Khorasani, Kyrgyz, Qaraqalpaq, Sakha, Tatar, Turkish, Turkmen, Tuvan, Uyghur, Uzbek</td><td>~25: ...</td>
-								</table>
+								</table -->
 								<!-- Swiftkey: Azərbaycani (Cyrillic, Perso-Arabic), Bashqort, Chuvash, Gagauz, Kazakh (Cyrillic, Latin), Khorasani, Kyrgyz, Qaraqalpaq, Sakha, Tatar, Turkish, Turkmen, Tuvan, Uyghur, Uzbek
 								Google virtual: Kazakh, Kyrgyz, Turkish (×2), Uzbek (×3)
 								Gboard: Azərbaycani (×3), Bashqort, Chuvash, Crimean Tatar (×2),  Gagauz (×3), Qarachay-Balqar, Qaraqalpaq (×2), Kazakh, Khorasani (×2), Kyrgyz, Qashqayi, Sakha, Tatar, Turkish (×2), Turkmen, Tuvan, Urum, Uyghur, Uzbek (×2)
 								iOS QuickType: Azərbaycani, Chuvash, Kazakh, Kyrgyz, Turkish, Turkmen, Uyghur, Uzbek (×3) -->
 						<!-- Android localisation: -->
-						</div>	
+						<!-- /div -->	
 
 						<!-- Google translate: Azerbayjani, Kazakh, Kyrgyz, Tatar, Turkish, Turkmen, Uyghur, Uzbek
 						Yandex translate: Azerbayjani, Bashqort, Chuvash, Kazakh (+Latin), Kyrgyz, Tatar, Turkish, Uzbek (+Cyrillic), Sakha -->
-						<div class="highlight-box">
+
+						<div class="highlight-box float-right">
+							<h4>Machine translation</h4>
+							<div style="height:280px">
+							<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["2", "1", "0"],
+  "datasets":[
+   {
+	 "data":[0.05, 0.175, 0.775],
+    "label":"MT coverage of Turkic: Yandex","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[0.2, 0.8],
+    "label":"MT coverage of Turkic: Google","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+							</canvas>
+							</div>
+							(Yandex, Google)
+						</div>
+						<!-- div class="highlight-box">
 							<h4>Machine translation</h4>
 							<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
 								<tr>
@@ -754,11 +844,46 @@ unused
 									<td class="caln highlight-red">✘</td>
 								</tr>
 							</table>
+						</div -->
+
+						<div class="highlight-box float-left">
+							<h4>Text-to-speech support</h4>
+							<div style="height:280px">
+								<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["6", "2", "1", "0"],
+  "datasets":[
+   {
+	 "data":[0.025, 0.125, 0.05, 0.8],
+    "label":"TTS coverage of Turkic: Android","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   },
+   {
+	 "data":[0.025, 0.975],
+    "label":"TTS coverage of Turkic: Siri","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": [
+	 	"rgba(212,176,74,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+								</canvas>
+							</div>
+							(Android, Siri)
 						</div>
 
-						<div class="highlight-box">
-							<h4>Text-to-speech support</h4>
-							<div class="float-left">
+							<!-- div class="float-left">
 								<span class="shrink">Siri</span>
 								<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
 									<tr><th>supported</th><th>languages</th></tr>
@@ -776,8 +901,9 @@ unused
 									<tr style="background-color:rgba(117,26,24,1)"><td>0</td><td>~31 other languages</td></tr>
 								</table>
 							</div>
-						</div>
-						<!-- Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (1), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/ -->
+						</div -->
+						<!-- 2023: Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (1), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/ -->
+						<!-- 2025: Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (2), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/  6: 1, 2: 5, 1: 2, 0: 32 -->
 						<!-- Siri: Turkish -->
 					</section>
 					<section>
