@@ -364,7 +364,7 @@ unused
 <!--
 {
  "data": {
-  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman","remainder"],
+  "labels": ["Turkish", "Uzbek", "Azərbaycani", "Uyghur", "Kazakh", "Turkmen", "Tatar", "Kyrgyz", "Iraqi Türkman","remainder (31 languages)"],
   "datasets":[
    {
 	 "data":[41.76,15.66,11.39,8.07,5.69,5.22,3.46,2.61,2.14,4.00],
@@ -388,8 +388,8 @@ unused
 -->
 							</canvas>
 						</div>
-						<hr/>
-						<p>("remainder": ~31 languages)</p>
+						<!-- hr/>
+						<p>("remainder": ~31 languages)</p -->
 					</div>
 				</section>
 
@@ -905,6 +905,53 @@ unused
 						<!-- 2023: Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (1), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/ -->
 						<!-- 2025: Android TTS support (# engines): Turkish (6), Uzbek (2), Azerbaijani (2), Kazakh (1), Kyrgyz (2), Turkmen (2), Uyghur (1), Tatar (2) --><!-- https://accessibleandroid.com/list-of-languages-with-available-tts-engines-on-android/  6: 1, 2: 5, 1: 2, 0: 32 -->
 						<!-- Siri: Turkish -->
+
+
+						<div class="highlight-box float-right">
+							<h4>Baseline localisation data</h4>
+							<div style="height:280px">
+								<canvas data-chart="pie" >
+<!--
+{
+ "data": {
+  "labels": ["modern", "moderate", "basic", "unrated", "missing"],
+  "datasets":[
+   {
+	 "data":[0.13, 0.022, 0.087, 0.174, 0.587],
+    "label":"CLDR coverage of Turkic","backgroundColor":"rgba(20,220,220,.8)",
+    "borderColor": "rgba(255,255,255,1)",
+	 "backgroundColor": ["rgba(68,100,65,1)",
+	 	"rgba(112,163,78,1)",
+	 	"rgba(212,176,74,1)",
+		"rgba(196,46,28,1)",
+		"rgba(117,26,24,1)"
+	  ]
+   }
+  ]
+ }
+}
+-->
+
+								</canvas>
+<!--
+	CLDR 2023
+		modern: 6/44
+		moderate: 1/44
+		basic: 2/44
+		unrated / being added: 6/44
+		missing: 29/44
+
+	CLDR 2025
+		modern: 6/46
+		moderate: 1/46
+		basic: 4/46
+		unrated: 8/46
+		missing: 27/46
+
+-->
+							</div>
+							(CLDR)
+						</div>
 					</section>
 					<section>
 					<h2>Existing Turkic Language technology</h2>
@@ -936,11 +983,15 @@ unused
 							<p>(baseline localisation data used widely)</p>
 							<table class="supershrink booktabs" style="max-width: 80% !important; margin-bottom: 0.5em;">
 								<tr><th>coverage</th><th>languages</th></tr>
-								<tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
+								<!-- tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
 								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Chuvash</td></tr>
 								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Tatar, Uzbek (Cyrillic)</td></tr>
 								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Sakha, Uyghur, Uzbek (Arabic)</td></tr>
-								<tr style="background-color:rgba(196,46,28,1)"><td>being added</td><td>1: Tuvan</td></tr>
+								<tr style="background-color:rgba(196,46,28,1)"><td>being added</td><td>1: Tuvan</td></tr -->
+								<tr style="background-color:rgba(68,100,65,1)"><td>modern</td><td>5: Azərbaycani, Kazakh, Kyrgyz, Turkish, Turkmen, Uzbek</td></tr>
+								<tr style="background-color:rgba(112,163,78,1)"><td>moderate</td><td>1: Tatar</td></tr>
+								<tr style="background-color:rgba(212,176,74,1)"><td>basic</td><td>2: Uzbek (Cyrillic), Chuvash, Sakha, Uyghur</td></tr>
+								<tr style="background-color:rgba(196,46,28,1)"><td>unrated</td><td>5: Azərbaycani (Arabic), Azərbaycani (Cyrillic), Uzbek (Arabic), Kazakh (Arabic), Tuvan, Qaraqalpaq, Qaraqalpaq (Latin), Bashqort</td></tr>
 								<tr style="background-color:rgba(117,26,24,1)"><td>missing</td><td>~30 ...</td></tr>
 							</table>
 						</div>
